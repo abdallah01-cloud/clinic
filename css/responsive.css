@@ -40,6 +40,10 @@
     margin-bottom: 30px;
   }
 
+    .about_section .img-box img {
+    padding: 40px;
+  }
+
   .contact_section .form_container {
     margin-bottom: 45px;
   }
