@@ -83,6 +83,7 @@
 
   <!-- contact section -->
   <section class="contact_section layout_padding">
+
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -92,42 +93,47 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form_container contact-form">
-            <form action="">
+            <form action="" id="myform">
+
               <div class="form-row">
                 <div class="col-lg-6">
                   <div>
-                    <input type="text" placeholder="Your Name" />
+                    <input type="text" id="name" placeholder="اسمك" />
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div>
-                    <input type="text" placeholder="Phone Number" />
+                    <input type="text" id="phone" placeholder="رقم الهاتف" />
                   </div>
                 </div>
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" id="email" placeholder="Email" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" id="messag" class="message-box"
+                  placeholder="اكتب شكوتك و هتجلنا على واتس اب بشكل تلقائى" />
               </div>
               <div class="btn_box">
-                <button>
+                <button type="button" onclick="sendToWhatsApp()"">
                   SEND
                 </button>
               </div>
             </form>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
-            </div>
+        <div class=" col-md-6">
+                  <div class="map_container">
+                    <div class="map">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d543.9932691257017!2d31.346827006991322!3d30.05534344783573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z2YHZiiDZhdmD2LHZhSDYudio2YrYryDYp9mE2LHYptmK2LPZiiDYqNis2YjYp9ixINmF2K3YrNmI2Kgg2YTZhNiz2YrYsdin2YXZitmDINmF2K_ZitmG2Ycg2YbYtdixINin2YTYr9mI2LEg2KrYp9mG2Yog2KfYudmE2Yog2LXZitiv2YTZitmHINin2YTYudiy2KjZig!5e1!3m2!1sar!2seg!4v1753651774835!5m2!1sar!2seg"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+              </div>
           </div>
         </div>
-      </div>
-    </div>
   </section>
   <!-- end contact section -->
 
